@@ -4,7 +4,9 @@ $(function() {
 	  slidesToShow: 1,
 	  slidesToScroll: 1, 
 	  autoplay: true,
-	  autoplaySpeed: 4000
+	  autoplaySpeed: 4000,
+	  prevArrow: '<i  id="leftArrow" class=" arrows fa fa-arrow-circle-left fa-3x"  aria-hidden="true"></i>',
+	  nextArrow: '<i  id="rightArrow" class=" arrows fa fa-arrow-circle-right  fa-3x"  aria-hidden="true"></i>'
   });
 
 
