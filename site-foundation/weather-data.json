@@ -1,0 +1,145 @@
+{
+  "success": true,
+  "data": [
+    {
+      "units": {
+        "distance": "mi",
+        "speed": "mph",
+        "pressure": "in",
+        "temperature": "F"
+      },
+      "language": "en-us",
+      "description": "Yahoo! Weather for Paducah, KY, US",
+      "astronomy": {
+        "sunrise": "5:45 am",
+        "sunset": "7:57 pm"
+      },
+      "item": {
+        "forecast": [
+          {
+            "day": "Mon",
+            "text": "Mostly Cloudy",
+            "date": "16 May 2016",
+            "high": 61,
+            "low": 47,
+            "code": 28
+          },
+          {
+            "day": "Tue",
+            "text": "Scattered Showers",
+            "date": "17 May 2016",
+            "high": 62,
+            "low": 51,
+            "code": 39
+          },
+          {
+            "day": "Wed",
+            "text": "Scattered Showers",
+            "date": "18 May 2016",
+            "high": 66,
+            "low": 50,
+            "code": 39
+          },
+          {
+            "day": "Thu",
+            "text": "Mostly Cloudy",
+            "date": "19 May 2016",
+            "high": 71,
+            "low": 51,
+            "code": 28
+          },
+          {
+            "day": "Fri",
+            "text": "Showers",
+            "date": "20 May 2016",
+            "high": 73,
+            "low": 58,
+            "code": 11
+          },
+          {
+            "day": "Sat",
+            "text": "Scattered Thunderstorms",
+            "date": "21 May 2016",
+            "high": 74,
+            "low": 61,
+            "code": 47
+          },
+          {
+            "day": "Sun",
+            "text": "Partly Cloudy",
+            "date": "22 May 2016",
+            "high": 76,
+            "low": 59,
+            "code": 30
+          },
+          {
+            "day": "Mon",
+            "text": "Partly Cloudy",
+            "date": "23 May 2016",
+            "high": 81,
+            "low": 61,
+            "code": 30
+          },
+          {
+            "day": "Tue",
+            "text": "Thunderstorms",
+            "date": "24 May 2016",
+            "high": 81,
+            "low": 64,
+            "code": 4
+          },
+          {
+            "day": "Wed",
+            "text": "Rain",
+            "date": "25 May 2016",
+            "high": 82,
+            "low": 67,
+            "code": 12
+          }
+        ],
+        "lat": 37.030182,
+        "guid": {
+          "isPermaLink": false
+        },
+        "condition": {
+          "text": "Cloudy",
+          "date": "Mon, 16 May 2016 03:00 PM CDT",
+          "temp": 60,
+          "code": 26
+        },
+        "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/26.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Mon - Mostly Cloudy. High: 61Low: 47\n<BR /> Tue - Scattered Showers. High: 62Low: 51\n<BR /> Wed - Scattered Showers. High: 66Low: 50\n<BR /> Thu - Mostly Cloudy. High: 71Low: 51\n<BR /> Fri - Showers. High: 73Low: 58\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12775789/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12775789/",
+        "pubDate": "Mon, 16 May 2016 03:00 PM CDT",
+        "long": -88.712601,
+        "title": "Conditions for Paducah, KY, US at 03:00 PM CDT"
+      },
+      "image": {
+        "link": "http://weather.yahoo.com",
+        "height": 18,
+        "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif",
+        "width": 142,
+        "title": "Yahoo! Weather"
+      },
+      "ttl": 60,
+      "atmosphere": {
+        "visibility": 16.1,
+        "humidity": 60,
+        "pressure": 1007,
+        "rising": 0
+      },
+      "location": {
+        "country": "United States",
+        "city": "Paducah",
+        "region": " KY"
+      },
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12775789/",
+      "lastBuildDate": "Mon, 16 May 2016 04:35 PM CDT",
+      "wind": {
+        "direction": 105,
+        "chill": 59,
+        "speed": 7
+      },
+      "title": "Yahoo! Weather - Paducah, KY, US"
+    }
+  ]
+}
