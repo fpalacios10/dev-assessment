@@ -290,7 +290,7 @@ p.footer-links {
 		width: 163px;
 	}
 	img.logo{
-		height: 120px;
+		height: 93px;
 	}
 	#subnav2{
 		display: none !important;
@@ -320,7 +320,10 @@ p.footer-links {
     background-color: #4c7498;
     font-weight: bold;
     font-size: 12px;
-}
+	}
+	.panel{
+		margin-bottom:0px;
+	}
 }
 
 @media (min-width: 991px) and (max-width: 1800px) {
