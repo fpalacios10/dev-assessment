@@ -10,14 +10,28 @@ $(function() {
 	  nextArrow: '<i  id="rightArrow" class=" arrows fa fa-arrow-circle-right  fa-3x"  aria-hidden="true"></i>'
 	});
 	
-  	//Change arrow size if mobile
-	var width = $(window).width();
-	if (width<=420) {
-		$('#leftArrow, #rightArrow').removeClass('fa-3x').addClass('fa-2x');
-	}
-	else {
-	}
+  	
+  	$( window ).resize(function() {
+	//Change arrow size if Mobile
+		var width = $(window).width();
+		if (width<=420) {
+			$('#leftArrow, #rightArrow').removeClass('fa-3x').addClass('fa-2x');
+		}
+		else {
+			$('#leftArrow, #rightArrow').removeClass('fa-2x').addClass('fa-3x');
+		}
+	//Hide custom Search box if not on mobile
+		if (width > 620) {
+			$('#searchBoxDisplay').hide();
+		}
 
+	});
+
+	//display search box
+	$('#searchBox').click(function(){
+		$('#searchBoxDisplay').slideToggle('fast');
+	});
+	
 	//set weather
 	var jsonData = $.getJSON("weather-data.json", function(jsonData) {
 		console.log(jsonData); 
