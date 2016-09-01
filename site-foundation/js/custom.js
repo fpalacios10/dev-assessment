@@ -29,9 +29,15 @@ $(function() {
 
 	//display search box
 	$('#searchBox').click(function(){
+		$('nav').removeClass('expanded');
 		$('#searchBoxDisplay').slideToggle('fast');
 	});
-	
+
+	//hide searchBox if menu is opened
+
+	$('.bars').click(function(){
+		$('#searchBoxDisplay').hide();
+	});	
 	//set weather
 	var jsonData = $.getJSON("weather-data.json", function(jsonData) {
 		console.log(jsonData); 
