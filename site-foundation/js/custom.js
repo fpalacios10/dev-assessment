@@ -34,7 +34,7 @@ $(function() {
 	//Change arrow size if Mobile
 		changeArrows();
 	//Hide custom Search box if not on mobile
-		if (windowWidth > 620) {
+		if (windowWidth > 1007) {
 			hideSearchBoxDisplay();
 		}
 	});
