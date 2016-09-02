@@ -13,9 +13,33 @@
 }
 #searchBoxDisplay{
 	display: none;
+	position: relative;
+}
+#searchBoxDisplay input{
+	padding-left: 25px;
+}
+#searchBoxDisplay .iconBox{
+    top: 10px;
+}
+.inputSearch{
+	font-size: 12px !important;
 }
 .blue-bkgnd{
 	background-color: #4c7498 !important;
+}
+.iconBox{
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    left: 6px;
+    color: #ccc;
+}
+.has-form input{
+    padding-left: 25px;
+    max-width: 100px;
+}
+.has-form div div{
+	position: relative;
 }
 #weather .fa{
 	color:#FFF;

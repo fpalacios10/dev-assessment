@@ -10,9 +10,8 @@ $(function() {
 	  nextArrow: '<i  id="rightArrow" class=" arrows fa fa-arrow-circle-right  fa-3x"  aria-hidden="true"></i>'
 	});
 
-	var windowWidth = $(window).width();
-	
 	function changeArrows(){
+		var windowWidth = $(window).width();
 		if (windowWidth<=420) {
 			$('#leftArrow, #rightArrow').removeClass('fa-3x').addClass('fa-2x');
 		}
@@ -24,9 +23,14 @@ $(function() {
 		$('#searchBoxDisplay').hide();
 	}
 
-
+	$(".inputSearch").keyup(function (e) {
+	    if (e.keyCode == 13) {
+	        alert('Search is currently not enabled');
+	    }
+	});
 
   	$( window ).resize(function() {
+  		var windowWidth = $(window).width();
 	//Change arrow size if Mobile
 		changeArrows();
 	//Hide custom Search box if not on mobile
