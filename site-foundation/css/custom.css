@@ -1,4 +1,8 @@
-
+/*
+Made changes to foundation.css for nav breakpoints
+on lines 1703 and 2047
+from 40.0625 to 64.063
+*/
 #searchBox{
     color: #FFF !important;
     position: absolute;
@@ -182,17 +186,17 @@ p.footer-links {
 .search-icon a span, .bars a span{
 	font-size: 28px;
 }
-
+.fullHeight{
+	height: 100%
+}
 
 /*from mobile to tablet breakpoints*/
 
-@media (max-width: 640px) {
+@media (max-width: 1025px) {
 	#searchBox{
 	    display: block;
 	}
-	.has-form.blue-bkgnd.panel{
-		display: none;
-	}
+
 	#searchBoxDisplay{
 		display:none;
 		width: 100%;
@@ -204,11 +208,10 @@ p.footer-links {
     font-size: 17px;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-}
-
-@media (max-width: 769px) {
-
+	}
+	.has-form.blue-bkgnd.panel{
+		display: none;
+	}
 	.sliderBox{
 		padding-top: 0px;
 	}
@@ -311,60 +314,6 @@ p.footer-links {
 
 
 
-/*Inbetween pc and tablet break points*/
-@media (min-width: 641px) and (max-width: 991px) {
-	.main-header li a{
-		padding: 0 13px;
-		font-size: 13px;
-	}
-	.navbar-form{
-		width: 163px;
-	}
-	img.logo{
-		height: 93px;
-	}
-	#subnav2{
-		display: none !important;
-	}
-	.vg-box {
-	    background-color: #4c7498;
-	    padding: 20px;
-	    
-	    margin-bottom: 10px;
-	}
-	#enewsbox{
-	    text-align: center;
-	}
 
-	.center{
-		text-align:center;
-	}
-
-	.grey .row .img-responsive:nth-child(1){
-		margin-bottom: 10px;
-	}
-	.sub-site button {
-	    width: 145px;
-	    margin-right: 10px;
-	}
-	#navSection .top-bar-section li a {
-    background-color: #4c7498;
-    font-weight: bold;
-    font-size: 12px;
-	}
-	.panel{
-		margin-bottom:0px;
-	}
-}
-
-@media (min-width: 991px) and (max-width: 1800px) {
-
-	#subnav2{
-		display: none !important;
-	}
-	.center{
-		text-align: center;
-	}
-}
 
 
