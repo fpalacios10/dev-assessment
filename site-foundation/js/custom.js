@@ -9,22 +9,30 @@ $(function() {
 	  prevArrow: '<i  id="leftArrow" class=" arrows fa fa-arrow-circle-left fa-3x"  aria-hidden="true"></i>',
 	  nextArrow: '<i  id="rightArrow" class=" arrows fa fa-arrow-circle-right  fa-3x"  aria-hidden="true"></i>'
 	});
+
+	var windowWidth = $(window).width();
 	
-  	
-  	$( window ).resize(function() {
-	//Change arrow size if Mobile
-		var width = $(window).width();
-		if (width<=420) {
+	function changeArrows(){
+		if (windowWidth<=420) {
 			$('#leftArrow, #rightArrow').removeClass('fa-3x').addClass('fa-2x');
 		}
 		else {
 			$('#leftArrow, #rightArrow').removeClass('fa-2x').addClass('fa-3x');
 		}
-	//Hide custom Search box if not on mobile
-		if (width > 620) {
-			$('#searchBoxDisplay').hide();
-		}
+	}  	
+	function hideSearchBoxDisplay(){
+		$('#searchBoxDisplay').hide();
+	}
 
+
+
+  	$( window ).resize(function() {
+	//Change arrow size if Mobile
+		changeArrows();
+	//Hide custom Search box if not on mobile
+		if (windowWidth > 620) {
+			hideSearchBoxDisplay();
+		}
 	});
 
 	//display search box
@@ -34,10 +42,10 @@ $(function() {
 	});
 
 	//hide searchBox if menu is opened
-
 	$('.bars').click(function(){
-		$('#searchBoxDisplay').hide();
+		hideSearchBoxDisplay();
 	});	
+
 	//set weather
 	var jsonData = $.getJSON("weather-data.json", function(jsonData) {
 		console.log(jsonData); 
@@ -46,4 +54,6 @@ $(function() {
 		var link = jsonData.data[0].link;
 		$("#weather").append('<a href="'+link+'"><i class="fa fa-cloud" aria-hidden="true"></i>' + temp +'&deg; '+ unit +'</a>');
 	});
+	//assign proper arrow size on page load
+	changeArrows();
 });
