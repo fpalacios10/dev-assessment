@@ -283,12 +283,12 @@ p.footer-links {
 	    border-bottom: 1px solid #ccc;
 	}
 	.vg-box {
-	    width: 100%;
 	    margin-bottom: 10px;
 	}
 
 	#enewsbox{
 	    text-align: center;
+	    float: none !important;
 	}
 	.footer .row .col-md-4.pull-left{
 		width: 100%;
